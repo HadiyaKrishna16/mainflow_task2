@@ -1,0 +1,489 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+
+/* Navbar styling */
+header {
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 20px 0;
+    transition: 0.3s;
+}
+
+/* Navbar container */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo styling */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff4d4d;
+    text-transform: uppercase;
+    transition: 0.3s;
+    letter-spacing: 2px;
+}
+
+
+.logo:hover {
+    color: #ff4d4d;
+}
+
+/* Logo and Company Name Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* Space between logo and name */
+}
+
+/* Logo Styling */
+.logo img {
+    height: 40px;
+    /* Set the logo height */
+    width: auto;
+    /* Maintain aspect ratio */
+    transition: 0.3s;
+}
+
+/* Company Name Styling */
+.company-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    /* Text color */
+}
+
+/* Navigation Menu */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navigation Links */
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    /* Space between menu items */
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #ff4d4d;
+    /* Hover color effect */
+}
+
+/* Navigation menu */
+.nav-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* Hover effect */
+.nav-menu a:hover {
+    background: #ff4d4d;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(255, 77, 77, 0.4);
+}
+
+/* Remove special background styling for Cart */
+.btn-cart,
+.btn-signup {
+    background: transparent;
+    /* Match the navbar background */
+    color: #333;
+    /* Same text color as other links */
+    font-weight: normal;
+    /* Consistent font weight */
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Hover effect for Cart and Sign Up buttons */
+.btn-cart:hover,
+.btn-signup:hover {
+    background: #ff4d4d;
+    /* Same hover effect */
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(255, 77, 77, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+
+
+
+/* Hero Banner */
+.hero-banner {
+    background-image: url('./assets/images/girl.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero-content span {
+    color: #ff4d4d;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ff4d4d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #d43f3f;
+}
+
+/* Features Section */
+.features-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature-box {
+    background: #ff4d4d;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.feature-box h3 {
+    margin-bottom: 10px;
+}
+
+/* New Arrivals */
+.new-arrivals {
+    background: #f0f0f0;
+    padding: 60px 0;
+}
+
+.arrivals-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.arrivals-image img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.arrivals-content {
+    max-width: 600px;
+}
+
+.arrivals-content h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.arrivals-content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.arrivals-content .btn {
+    padding: 12px 30px;
+    background-color: #ff4d4d;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.arrivals-content .btn:hover {
+    background-color: #d43f3f;
+}
+
+
+
+/* Products Section */
+.products-heading {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.products-heading span {
+    color: #ff4d4d;
+}
+
+/* Grid layout */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Product card styling */
+.product-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Product info */
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 18px;
+    color: #ff4d4d;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Button styling */
+.product-card .btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #ff4d4d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.product-card .btn:hover {
+    background: #d43f3f;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Footer Styling */
+.footer {
+    background: #ff6161;
+    color: #ffffff;
+    padding: 50px 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    color: #fdfdfd;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #fffcfc;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #007bff;
+}
+
+.footer-section p {
+    margin: 10px 0;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #ffffff;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    color: #fafafa;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    flex: 1;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
